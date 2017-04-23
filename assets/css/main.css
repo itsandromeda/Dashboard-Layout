@@ -12,7 +12,8 @@ body {
 
 header {
     position: fixed;
-    min-width: 1366px;
+    top: 0;
+    min-width: 1349px;
     height: 80px;
     z-index: 5;
 }
@@ -20,11 +21,11 @@ header {
 .member-status {
     box-sizing: border-box;
     background-color: #2EB398;
-    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Abel', sans-serif;
     text-transform: uppercase;
     color: #fff;
     padding: 14px 0;
-    width: 20.5%;
+    width: 20.75%;
     float: left;
 }
 
@@ -59,13 +60,14 @@ header {
     background: #fff;
     box-shadow: 4px 0 10px 0 rgba(0, 0, 0, 0.2);
     height: 80px;
-    width: 79.5%;
+    width: 79.25%;
     float: right;
 }
 
 .dashboard {
     border-right: 1px solid #ccc;
     position: absolute;
+    float: left;
     padding: 22.5px;
     text-decoration: none;
 }
@@ -148,11 +150,21 @@ header {
 
 nav {
     background-color: #232B2D;
-    font: 600 16px "Rajdhani", Helvetica, Arial, sans-serif;
+    font: 600 16px "Abel", Helvetica, Arial, sans-serif;
     position: fixed;
     width: 280px;
     height: 100%;
     z-index: 4;
+}
+
+.nav-title {
+    color: #626E71;
+    text-transform: uppercase;
+    border-bottom: 1px solid #4E595B;
+    box-sizing: border-box;
+    padding: 5px 40px;
+    position: absolute;
+    width: 100%;
 }
 
 .nav-options {
@@ -181,16 +193,67 @@ nav {
 #more,
 #settings {
     position: relative;
-    top: 100px;
+    top: 80px;
     height: 25%;
 }
 
-.nav-title {
-    color: #626E71;
-    text-transform: uppercase;
-    border-bottom: 1px solid #4E595B;
-    box-sizing: border-box;
-    padding: 5px 40px;
+
+/*
+    ====================
+    Main content
+    ====================
+*/
+
+.wrapper {
     position: absolute;
+    top: 80px;
+    right: 0;
+    width: 1070px;
+    height: 800px;
+}
+
+.overview {    
+    box-sizing: border-box;
+    width: 838px;
+    height: 800px;
+    float: left;
+}
+
+.overview-title h2 {
+    margin: 0;
+}
+
+.overview-title {
+    background-color: #F7F7F7;
+    font: 20px 'Abel', sans-serif;
+    color: #333;
+    padding: 20px 30px 15px 30px;
+}
+
+#reaction-box {
+    background-color: #fff;
+    height: 150px;
+}
+
+#gallery-items {
+    background-color: #F7F7F7;
+    height: 577px;
+}
+
+.aside {
+    box-sizing: border-box;
+    background-color: #EDEDED;
+    font-family: 'Abel', sans-serif;
+    float: right;
+    width: 232px;
+    height: 800px;
+    padding: 25px 20px;
+}
+
+footer {
+    background-color: #232B2D;
+    position: absolute;
+    bottom: 0;
     width: 100%;
+    height: 50px;
 }
