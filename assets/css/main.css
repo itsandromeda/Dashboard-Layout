@@ -14,6 +14,7 @@ header {
     position: fixed;
     min-width: 1366px;
     height: 80px;
+    z-index: 5;
 }
 
 .member-status {
@@ -136,4 +137,60 @@ header {
 
 .sign-out {
     right: 0;
+}
+
+
+/*
+    ====================
+    Navigation bar
+    ====================
+*/
+
+nav {
+    background-color: #232B2D;
+    font: 600 16px "Rajdhani", Helvetica, Arial, sans-serif;
+    position: fixed;
+    width: 280px;
+    height: 100%;
+    z-index: 4;
+}
+
+.nav-options {
+    text-decoration: none;
+    color: #626E71;
+    display: block;
+    padding: 5px 40px;
+    position: relative;
+    top: 30px;
+}
+
+.nav-options:hover {
+    background-color: #676E71;
+    color: #fff;
+}
+
+.default {
+    color: #fff;
+}
+
+.nav-options i {
+    margin-right: 8px;
+}
+
+#main,
+#more,
+#settings {
+    position: relative;
+    top: 100px;
+    height: 25%;
+}
+
+.nav-title {
+    color: #626E71;
+    text-transform: uppercase;
+    border-bottom: 1px solid #4E595B;
+    box-sizing: border-box;
+    padding: 5px 40px;
+    position: absolute;
+    width: 100%;
 }
