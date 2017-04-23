@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*
+    ====================
+    Header
+    ====================
+*/
+
+header {
+    position: fixed;
+    min-width: 1366px;
+    height: 80px;
+}
+
+.member-status {
+    box-sizing: border-box;
+    background-color: #2EB398;
+    font-family: 'Rajdhani', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 14px 0;
+    width: 20.5%;
+    float: left;
+}
+
+.user-info {
+    width: 200px;
+    margin: auto;
+}
+
+.user-info img {
+    border-radius: 50%;
+    margin-right: 10px;
+    float: left;
+    cursor: pointer;
+}
+
+.user-info div {
+    display: inline-block;
+    line-height: 2px;
+    width: 140px;
+}
+
+.user-info p:first-child {
+    font-weight: 300;
+}
+
+.user-info p:last-child {
+    font-weight: bold;
+}
+
+.member-actions {
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow: 4px 0 10px 0 rgba(0, 0, 0, 0.2);
+    height: 80px;
+    width: 79.5%;
+    float: right;
+}
+
+.dashboard {
+    border-right: 1px solid #ccc;
+    position: absolute;
+    padding: 22.5px;
+    text-decoration: none;
+}
+
+.member-actions .fa-caret-left {
+    font-size: 20px;
+    color: #333;
+    margin-right: 1px;
+    position: relative;
+    top: -5px;
+}
+
+.member-actions .fa-bars {
+    color: #ccc;
+    font-size: 35px;
+}
+
+.search {
+    display: inline-block;
+    position: relative;
+    left: 110px;
+    top: 27px;
+    width: 210px;
+}
+
+.search input {
+    outline: none;
+    color: #333;
+    border: none;
+    background-color: #2EB398;
+    border-radius: 30px;
+    padding: 6px 30px 6px 10px;
+}
+
+.search .fa-search {
+    font-size: 16px;
+    color: #fff;
+    position: absolute;
+    right: 10px;
+    top: 4px;
+}
+
+.add-friend,
+.calendar,
+.sign-out {
+    font-size: 25px;
+    color: #ccc;
+    text-decoration: none;
+    border-left: 1px solid #ccc;
+    position: absolute;
+    padding: 26px;
+}
+
+.add-friend:hover,
+.calendar:hover,
+.sign-out:hover {
+    background-color: #2EB398;
+    border: none;
+    color: #fff;
+}
+
+.calendar {
+    right: 75px;
+}
+
+.add-friend {
+    right: 150px;
+}
+
+.sign-out {
+    right: 0;
+}
