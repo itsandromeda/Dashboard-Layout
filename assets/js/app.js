@@ -150,3 +150,83 @@ function reaction(container, icon, title, date, count) {
 for (i = 0; i < reactions.length; i += 1) {
     reaction(containerArray[i], iconArray[i], titleArray[i], descriptionArray[i], linkArray[i]);
 }
+
+/*GALLERY ITEMS*/
+
+var gallery = [{
+    img: "reaction-box",
+    src: "assets/images/Home is wherever mom is.jpg",
+    alt: "Home is wherever mom is",
+    time: "32 minutes ago"
+}, {
+    img: "reaction-box",
+    src: "assets/images/Never too old for bruises and broken bones.jpg",
+    alt: "Never too old for bruises",
+    time: "1 hour ago"
+}, {
+    img: "reaction-box",
+    src: "assets/images/Wanderlust.jpg",
+    alt: "Wanderlust",
+    time: "1 hour ago"
+}, {
+    img: "reaction-box",
+    src: "assets/images/Work hard.jpg",
+    alt: "Work hard",
+    time: "1 hour ago"
+}, {
+    img: "reaction-box",
+    src: "assets/images/Point 44 Magnum...jpg",
+    alt: "Point 44 Magnum..",
+    time: "1 hour ago"
+}, {
+    img: "reaction-box",
+    src: "assets/images/I will not be impressed by technology.jpg",
+    alt: "I will not be impressed by technology",
+    time: "1 hour ago"
+}, {
+    img: "reaction-box",
+    src: "assets/images/G.jpg",
+    alt: "G",
+    time: "2 hours ago"
+}, {
+    img: "reaction-box",
+    src: "assets/images/Still Together, Still Going Strong.jpg",
+    alt: "Still Together, Still Going Strong",
+    time: "2 hours ago"
+}, {
+    img: "reaction-box",
+    src: "assets/images/This sketchbook belongs to...jpg",
+    alt: "This sketchbook belongs to...",
+    time: "2 hours ago"
+}];
+
+var imagesArray = gallery.map((e) => e.img),
+    srcArray = gallery.map((e) => e.src),
+    altArray = gallery.map((e) => e.alt),
+    timeArray = gallery.map((e) => e.time),
+    x;
+
+function printGallery(picture, src, alt, time, i) {
+    var figure = document.createElement("figure"),
+        image = document.createElement("img"),
+        figcaption = document.createElement("figcaption"),
+        spanA = document.createElement("span"),
+        spanB = document.createElement("span"),
+        descriptionText = document.createTextNode(alt),
+        timeText = document.createTextNode(time);
+
+    image.setAttribute("src", src);
+    image.setAttribute("alt", alt);
+    figure.classList.add("gallery-item");
+    figure.appendChild(image);
+    spanA.appendChild(descriptionText);
+    spanB.appendChild(timeText);
+    figcaption.appendChild(spanA);
+    figcaption.appendChild(spanB);
+    figure.appendChild(figcaption);
+    document.getElementById("gallery-items").appendChild(figure);
+}
+
+for (i = 0; i < gallery.length; i += 1) {
+    printGallery(imagesArray[i], srcArray[i], altArray[i], timeArray[i], i);
+}

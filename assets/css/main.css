@@ -211,13 +211,13 @@ nav {
     top: 80px;
     right: 0;
     width: 1070px;
-    height: 800px;
+    height: 1100px;
 }
 
 .overview {
     box-sizing: border-box;
     width: 838px;
-    height: 800px;
+    height: 1100px;
     float: left;
 }
 
@@ -276,7 +276,36 @@ nav {
 
 #gallery-items {
     background-color: #F7F7F7;
-    height: 577px;
+    height: 877px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px 30px;
+}
+
+.gallery-item {
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 3px;
+    text-align: left;
+    display: inline-block;
+    height: 240px;
+    margin: 0 20px 20px 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.gallery-item img {
+    border-radius: 3px;
+    height: 180px;
+}
+
+.gallery-item span {
+    font: 13px 'Abel', sans-serif;
+    display: block;
+}
+
+.gallery-item span:nth-child(1) {
+    font-weight: bold;
 }
 
 .aside {
@@ -285,7 +314,7 @@ nav {
     font-family: 'Abel', sans-serif;
     float: right;
     width: 232px;
-    height: 800px;
+    height: 1100px;
     padding: 25px 20px;
 }
 
