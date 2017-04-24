@@ -162,8 +162,9 @@ nav {
     text-transform: uppercase;
     border-bottom: 1px solid #4E595B;
     box-sizing: border-box;
-    padding: 5px 40px;
+    padding: 5px 40px 8px 40px;
     position: absolute;
+    top: 15px;
     width: 100%;
 }
 
@@ -173,7 +174,7 @@ nav {
     display: block;
     padding: 5px 40px;
     position: relative;
-    top: 30px;
+    top: 48px;
 }
 
 .nav-options:hover {
@@ -195,6 +196,7 @@ nav {
     position: relative;
     top: 80px;
     height: 25%;
+    margin-bottom: 10px;
 }
 
 
@@ -212,15 +214,11 @@ nav {
     height: 800px;
 }
 
-.overview {    
+.overview {
     box-sizing: border-box;
     width: 838px;
     height: 800px;
     float: left;
-}
-
-.overview-title h2 {
-    margin: 0;
 }
 
 .overview-title {
@@ -228,6 +226,10 @@ nav {
     font: 20px 'Abel', sans-serif;
     color: #333;
     padding: 20px 30px 15px 30px;
+}
+
+.overview-title h2 {
+    margin: 0;
 }
 
 #reaction-box {
@@ -252,8 +254,25 @@ nav {
 
 footer {
     background-color: #232B2D;
+    font-family: 'Abel', sans-serif;
+    color: #fff;
+    text-align: center;
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 50px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer a:hover {
+    font-weight: bold;
+}
+
+.heart {
+    position: relative;
+    top: 4px;
 }
