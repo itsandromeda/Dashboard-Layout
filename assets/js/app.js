@@ -147,8 +147,8 @@ function reaction(container, icon, title, date, count) {
     document.getElementById(container).appendChild(parent);
 }
 
-for (i = 0; i < reactions.length; i += 1) {
-    reaction(containerArray[i], iconArray[i], titleArray[i], descriptionArray[i], linkArray[i]);
+for (y = 0; y < reactions.length; y += 1) {
+    reaction(containerArray[y], iconArray[y], titleArray[y], descriptionArray[y], linkArray[y]);
 }
 
 /*GALLERY ITEMS*/
@@ -206,7 +206,7 @@ var imagesArray = gallery.map((e) => e.img),
     timeArray = gallery.map((e) => e.time),
     x;
 
-function printGallery(picture, src, alt, time, i) {
+function printGallery(picture, src, alt, time) {
     var figure = document.createElement("figure"),
         image = document.createElement("img"),
         figcaption = document.createElement("figcaption"),
@@ -227,6 +227,89 @@ function printGallery(picture, src, alt, time, i) {
     document.getElementById("gallery-items").appendChild(figure);
 }
 
-for (i = 0; i < gallery.length; i += 1) {
-    printGallery(imagesArray[i], srcArray[i], altArray[i], timeArray[i], i);
+for (x = 0; x < gallery.length; x += 1) {
+    printGallery(imagesArray[x], srcArray[x], altArray[x], timeArray[x]);
+}
+
+/*NOTIFICATIONS*/
+
+var notifications = [{
+    container: "notifications",
+    icon: "fa-heart-o",
+    time: "2 minutes ago",
+    action: "Helgado liked your post."
+}, {
+    container: "notifications",
+    icon: "fa-heart-o",
+    time: "2 minutes ago",
+    action: "Helgado liked your post."
+}, {
+    container: "notifications",
+    icon: "fa-heart-o",
+    time: "2 minutes ago",
+    action: "Helgado liked your post."
+}, {
+    container: "notifications",
+    icon: "fa-comment-o",
+    time: "2 minutes ago",
+    action: "Gracielart posted a comment."
+}, {
+    container: "team",
+    icon: "fa-comment-o",
+    time: "Online",
+    action: "Andrea Graciela"
+}, {
+    container: "team",
+    icon: "fa-comment",
+    time: "Offline",
+    action: "Helgado"
+}, {
+    container: "team",
+    icon: "fa-comment-o",
+    time: "Online",
+    action: "Makoret"
+}, {
+    container: "team",
+    icon: "fa-comment-o",
+    time: "Online",
+    action: "Drapsnatt"
+}, {
+    container: "team",
+    icon: "fa-comment-o",
+    time: "Online",
+    action: "Saryra"
+}, {
+    container: "team",
+    icon: "fa-comment-o",
+    time: "Online",
+    action: "Miker Franco"
+}];
+
+var notificationContainer = notifications.map((e) => e.container),
+    iconNotification = notifications.map((e) => e.icon),
+    notificationTime = notifications.map((e) => e.time),
+    action = notifications.map((e) => e.action),
+    z;
+
+function notificationsAlert(container, icon, time, action) {
+    var parent = document.createElement("div"),
+        iconE = document.createElement("i"),
+        spanA = document.createElement("span"),
+        spanB = document.createElement("span"),
+        actionText = document.createTextNode(action),
+        timeText = document.createTextNode(time);
+
+    iconE.classList.add("fa");
+    iconE.classList.add(icon);
+    spanA.appendChild(actionText);
+    spanB.appendChild(timeText);
+    parent.appendChild(iconE);
+    parent.appendChild(spanA);
+    parent.appendChild(spanB);
+    parent.classList.add("notifications");
+    document.getElementById(container).appendChild(parent);
+}
+
+for (z = 0; z < notifications.length; z += 1) {
+    notificationsAlert(notificationContainer[z], iconNotification[z], notificationTime[z], action[z]);
 }

@@ -312,10 +312,35 @@ nav {
     box-sizing: border-box;
     background-color: #EDEDED;
     font-family: 'Abel', sans-serif;
-    float: right;
+    color: #333;
     width: 232px;
     height: 1100px;
     padding: 25px 20px;
+    float: right;
+}
+
+.aside span:first-child {
+    padding: 10px;
+    background-color: #E6614F;
+    font-style: normal;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.aside span {
+    font-size: 12px;
+    display: block;
+    font-style: italic;
+}
+
+.notifications {
+    margin-bottom: 15px;
+}
+
+.notifications i {
+    font-size: 30px;
+    margin-right: 5px;
+    float: left;
 }
 
 footer {
