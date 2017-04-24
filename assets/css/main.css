@@ -237,6 +237,43 @@ nav {
     height: 150px;
 }
 
+.reactions {
+    box-sizing: border-box;
+    border-right: 1px solid #ccc;
+    color: #666;
+    display: inline-block;
+    padding: 30px;
+    width: 167.5px;
+    height: 150px;
+}
+
+.reactions:last-child {
+    border: none;
+}
+
+.reactions i {
+    font-size: 25px;
+    float: left;
+    margin-right: 10px;
+}
+
+.reactions span:nth-child(2) {
+    font-weight: bold;
+}
+
+.reactions span:nth-child(4) {
+    clear: both;
+    float: left;
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.reactions span {
+    font: 12px/12px 'Abel', sans-serif;
+    display: block;
+}
+
 #gallery-items {
     background-color: #F7F7F7;
     height: 577px;
@@ -263,6 +300,11 @@ footer {
     height: 50px;
 }
 
+.heart {
+    position: relative;
+    top: 4px;
+}
+
 footer a {
     text-decoration: none;
     color: #fff;
@@ -270,9 +312,4 @@ footer a {
 
 footer a:hover {
     font-weight: bold;
-}
-
-.heart {
-    position: relative;
-    top: 4px;
 }
